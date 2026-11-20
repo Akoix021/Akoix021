@@ -1,0 +1,343 @@
+{"initial": {"joint1": -1.77, "joint2": 0, "joint3": 2.12, "joint4": -1.68, "joint5": 1.76, "joint6": 0, "act_r_f_joint1_1": 1.56},
+ "phases": [
+  {
+    "group": "arm",
+    "steps": 20,
+    "after": 1,
+    "targets": {
+      "joint1": [-1.77, -1.77],
+      "joint2": [0, 0.109],
+      "joint3": [2.12, 2.09],
+      "joint4": [-1.68, -1.63],
+      "joint5": [1.76, 1.76],
+      "joint6": [0, 0]
+    }
+  },
+  {
+    "group": "hand",
+    "steps": 20,
+    "after": 1,
+    "targets": {
+      "act_r_f_joint1_2": [0, 0],
+      "act_r_f_joint1_3": [0, 0.793],
+      "act_r_f_joint1_4": [0, 1.16],
+      "act_r_f_joint1_1": [1.56, 1.57],
+      "act_r_f_joint2_2": [0, 0.533],
+      "act_r_f_joint2_3": [0, 0.799],
+      "act_r_f_joint2_4": [0, 1.3],
+      "act_r_f_joint2_1": [0, 0.3],
+      "act_r_f_joint3_2": [0, 0.507],
+      "act_r_f_joint3_3": [0, 1.07],
+      "act_r_f_joint3_4": [0, 1.3],
+      "act_r_f_joint3_1": [0, 0],
+      "act_r_f_joint4_2": [0, 0.39],
+      "act_r_f_joint4_3": [0, 1.07],
+      "act_r_f_joint4_4": [0, 1.3],
+      "act_r_f_joint4_1": [0, 0.222],
+      "act_r_f_joint5_2": [0, 0.305],
+      "act_r_f_joint5_3": [0, 0.916],
+      "act_r_f_joint5_4": [0, 1.3],
+      "act_r_f_joint5_1": [0, 0.6]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 150,
+    "after": 0,
+    "targets": {
+      "joint1": [-1.77, -1.77],
+      "joint2": [0.109, -0.09],
+      "joint3": [2.09, 2.17],
+      "joint4": [-1.63, -1.72],
+      "joint5": [1.76, 1.76],
+      "joint6": [0, 0]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 400,
+    "after": 1,
+    "targets": {
+      "joint1": [-1.77, 0.519],
+      "joint2": [-0.09, 0.322],
+      "joint3": [2.17, 1.41],
+      "joint4": [-1.72, -2.15],
+      "joint5": [1.76, -0.6],
+      "joint6": [0, 0.214]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 200,
+    "after": 1,
+    "targets": {
+      "joint1": [0.519, 0.52],
+      "joint2": [0.322, 0.322],
+      "joint3": [1.41, 1.41],
+      "joint4": [-2.15, -2.39],
+      "joint5": [-0.6, -0.6],
+      "joint6": [0.214, 0.427]
+    }
+  },
+  {
+    "group": "hand",
+    "steps": 300,
+    "after": 1,
+    "targets": {
+      "act_r_f_joint1_2": [0, 0],
+      "act_r_f_joint1_3": [0.793, 0.2],
+      "act_r_f_joint1_4": [1.16, 0.8],
+      "act_r_f_joint1_1": [1.57, 1.57],
+      "act_r_f_joint2_2": [0.533, 0.533],
+      "act_r_f_joint2_3": [0.799, 0.799],
+      "act_r_f_joint2_4": [1.3, 1.3],
+      "act_r_f_joint2_1": [0.3, 0.3],
+      "act_r_f_joint3_2": [0.507, 0.507],
+      "act_r_f_joint3_3": [1.07, 1.07],
+      "act_r_f_joint3_4": [1.3, 1.3],
+      "act_r_f_joint3_1": [0, 0],
+      "act_r_f_joint4_2": [0.39, 0.39],
+      "act_r_f_joint4_3": [1.07, 1.07],
+      "act_r_f_joint4_4": [1.3, 1.3],
+      "act_r_f_joint4_1": [0.222, 0.222],
+      "act_r_f_joint5_2": [0.305, 0.305],
+      "act_r_f_joint5_3": [0.916, 0.916],
+      "act_r_f_joint5_4": [1.3, 1.3],
+      "act_r_f_joint5_1": [0.6, 0.6]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 300,
+    "after": 1,
+    "targets": {
+      "joint1": [0.52, 0.52],
+      "joint2": [0.322, 0.322],
+      "joint3": [1.41, 1.41],
+      "joint4": [-2.39, -2.5],
+      "joint5": [-0.6, -0.6],
+      "joint6": [0.427, 0.55]
+    }
+  },
+  {
+    "group": "hand",
+    "steps": 300,
+    "after": 1,
+    "targets": {
+      "act_r_f_joint1_2": [0, 0],
+      "act_r_f_joint1_3": [0.2, 0.2],
+      "act_r_f_joint1_4": [0.8, 0.8],
+      "act_r_f_joint1_1": [1.57, 1.57],
+      "act_r_f_joint2_2": [0.533, 0.533],
+      "act_r_f_joint2_3": [0.799, 0.799],
+      "act_r_f_joint2_4": [1.3, 0],
+      "act_r_f_joint2_1": [0.3, 0.3],
+      "act_r_f_joint3_2": [0.507, 0.507],
+      "act_r_f_joint3_3": [1.07, 1.07],
+      "act_r_f_joint3_4": [1.3, 0.8],
+      "act_r_f_joint3_1": [0, 0],
+      "act_r_f_joint4_2": [0.39, 0.39],
+      "act_r_f_joint4_3": [1.07, 1.07],
+      "act_r_f_joint4_4": [1.3, 0.8],
+      "act_r_f_joint4_1": [0.222, 0.222],
+      "act_r_f_joint5_2": [0.305, 0.305],
+      "act_r_f_joint5_3": [0.916, 0.916],
+      "act_r_f_joint5_4": [1.3, 0],
+      "act_r_f_joint5_1": [0.6, 0.6]
+    }
+  },
+  {
+    "group": "hand",
+    "steps": 20,
+    "after": 1,
+    "targets": {
+      "act_r_f_joint1_2": [0, 0],
+      "act_r_f_joint1_3": [0.2, 0],
+      "act_r_f_joint1_4": [0.8, 0],
+      "act_r_f_joint1_1": [1.57, 1.56],
+      "act_r_f_joint2_2": [0.533, 0],
+      "act_r_f_joint2_3": [0.799, 0],
+      "act_r_f_joint2_4": [0, 0],
+      "act_r_f_joint2_1": [0.3, 0],
+      "act_r_f_joint3_2": [0.507, 0],
+      "act_r_f_joint3_3": [1.07, 0],
+      "act_r_f_joint3_4": [0.8, 0],
+      "act_r_f_joint3_1": [0, 0],
+      "act_r_f_joint4_2": [0.39, 0],
+      "act_r_f_joint4_3": [1.07, 0],
+      "act_r_f_joint4_4": [0.8, 0],
+      "act_r_f_joint4_1": [0.222, 0],
+      "act_r_f_joint5_2": [0.305, 0],
+      "act_r_f_joint5_3": [0.916, 0],
+      "act_r_f_joint5_4": [0, 0],
+      "act_r_f_joint5_1": [0.6, 0]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 20,
+    "after": 1,
+    "targets": {
+      "joint1": [0.52, 0],
+      "joint2": [0.322, 0],
+      "joint3": [1.41, 0],
+      "joint4": [-2.5, 0],
+      "joint5": [-0.6, 0],
+      "joint6": [0.55, 0]
+    }
+  },
+  {
+    "group": "fixture",
+    "steps": 50,
+    "after": 1,
+    "targets": {
+      "drone_r_jaw": [0, -0.02],
+      "drone_l_jaw": [0, 0.02],
+      "slideblock": [0, 0.12],
+      "batt_u_jaw": [0, 0.015],
+      "batt_l_jaw": [0, -0.0154]
+    }
+  },
+  {
+    "group": "fixture",
+    "steps": 50,
+    "after": 1,
+    "targets": {
+      "sliderod": [0, 0.1]
+    }
+  },
+  {
+    "group": "fixture",
+    "steps": 50,
+    "after": 1,
+    "targets": {
+      "sliderod": [0.1, 0]
+    }
+  },
+  {
+    "group": "fixture",
+    "steps": 20,
+    "after": 1,
+    "targets": {
+      "slideblock": [0.12, 0],
+      "batt_u_jaw": [0.015, 0],
+      "batt_l_jaw": [-0.0154, 0]
+    }
+  },
+  {
+    "group": "hand",
+    "steps": 20,
+    "after": 0,
+    "targets": {
+      "act_r_f_joint1_2": [0, 0],
+      "act_r_f_joint1_3": [0, 1.3],
+      "act_r_f_joint1_4": [0, 1.3],
+      "act_r_f_joint1_1": [1.56, 0],
+      "act_r_f_joint2_2": [0, 0],
+      "act_r_f_joint2_3": [0, 0],
+      "act_r_f_joint2_4": [0, 0],
+      "act_r_f_joint2_1": [0, 0],
+      "act_r_f_joint3_2": [0, 1.3],
+      "act_r_f_joint3_3": [0, 1.3],
+      "act_r_f_joint3_4": [0, 1.3],
+      "act_r_f_joint3_1": [0, 0],
+      "act_r_f_joint4_2": [0, 1.3],
+      "act_r_f_joint4_3": [0, 1.3],
+      "act_r_f_joint4_4": [0, 1.3],
+      "act_r_f_joint4_1": [0, 0],
+      "act_r_f_joint5_2": [0, 1.3],
+      "act_r_f_joint5_3": [0, 1.3],
+      "act_r_f_joint5_4": [0, 1.3],
+      "act_r_f_joint5_1": [0, 0]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 20,
+    "after": 0,
+    "targets": {
+      "joint1": [0, -0.732],
+      "joint2": [0, -0.105],
+      "joint3": [0, 0.811],
+      "joint4": [0, 0.475],
+      "joint5": [0, 1.83],
+      "joint6": [0, 0.0305]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 20,
+    "after": 0,
+    "targets": {
+      "joint1": [-0.732, -0.732],
+      "joint2": [-0.105, -0.105],
+      "joint3": [0.811, 0.825],
+      "joint4": [0.475, 0.475],
+      "joint5": [1.83, 1.83],
+      "joint6": [0.0305, 0.0305]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 20,
+    "after": 0,
+    "targets": {
+      "joint1": [-0.732, -0.732],
+      "joint2": [-0.105, -0.105],
+      "joint3": [0.825, 0.811],
+      "joint4": [0.475, 0.475],
+      "joint5": [1.83, 1.83],
+      "joint6": [0.0305, 0.0305]
+    }
+  },
+  {
+    "group": "arm",
+    "steps": 20,
+    "after": 1,
+    "targets": {
+      "joint1": [-0.732, 0],
+      "joint2": [-0.105, 0],
+      "joint3": [0.811, 0],
+      "joint4": [0.475, 0],
+      "joint5": [1.83, 0],
+      "joint6": [0.0305, 0]
+    }
+  },
+  {
+    "group": "hand",
+    "steps": 20,
+    "after": 1,
+    "targets": {
+      "act_r_f_joint1_2": [0, 0],
+      "act_r_f_joint1_3": [1.3, 0],
+      "act_r_f_joint1_4": [1.3, 0],
+      "act_r_f_joint1_1": [0, 0],
+      "act_r_f_joint2_2": [0, 0],
+      "act_r_f_joint2_3": [0, 0],
+      "act_r_f_joint2_4": [0, 0],
+      "act_r_f_joint2_1": [0, 0],
+      "act_r_f_joint3_2": [1.3, 0],
+      "act_r_f_joint3_3": [1.3, 0],
+      "act_r_f_joint3_4": [1.3, 0],
+      "act_r_f_joint3_1": [0, 0],
+      "act_r_f_joint4_2": [1.3, 0],
+      "act_r_f_joint4_3": [1.3, 0],
+      "act_r_f_joint4_4": [1.3, 0],
+      "act_r_f_joint4_1": [0, 0],
+      "act_r_f_joint5_2": [1.3, 0],
+      "act_r_f_joint5_3": [1.3, 0],
+      "act_r_f_joint5_4": [1.3, 0],
+      "act_r_f_joint5_1": [0, 0]
+    }
+  },
+  {
+    "group": "fixture",
+    "steps": 50,
+    "after": 0,
+    "targets": {
+      "drone_r_jaw": [-0.02, 0],
+      "drone_l_jaw": [0.02, 0]
+    }
+  }
+ ]
+}

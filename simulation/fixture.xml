@@ -1,0 +1,65 @@
+<!-- Review model derived from the six fixture joints and their primitive collision geometry in main.xml. Three blue boxes and a grey guide rail replace CAD visuals. -->
+<mujoco model="Battery fixture preview">
+  <compiler angle="radian" autolimits="true" />
+  <option timestep="0.001" iterations="200" solver="Newton" integrator="implicit" gravity="0 0 -9.81" cone="elliptic" tolerance="1e-10" />
+  <statistic center="-0.13 0.33 0.69" extent="0.7" />
+  <visual>
+    <global azimuth="125" elevation="-22" />
+    <headlight ambient="0.40 0.40 0.42" diffuse="0.60 0.60 0.60" />
+  </visual>
+  <asset>
+    <texture type="skybox" builtin="gradient" rgb1="0.78 0.84 0.87" rgb2="0.90 0.92 0.93" width="256" height="1536" />
+  </asset>
+  <worldbody>
+    <light pos="-1 0 3" dir="0.3 0 -1" directional="true" />
+    <geom name="floor" type="plane" size="2 2 0.05" rgba="0.78 0.80 0.82 1" />
+    <body name="table" pos="0 0 0.5">
+      <geom type="box" pos="-0.32 0.278 0.283" size="0.14 0.01 0.006" rgba="0.49 0.54 0.56 1" contype="0" conaffinity="0" group="2" />
+      <geom type="box" size="0.5 0.5 0.01" pos="0 0.5 0" solref="0.001 2" solimp="0.99 0.99 0.001" friction="3. 2. 2." rgba="0.27 0.35 0.40 1" />
+      <geom type="box" size="0.5 0.5 0.24" pos="0 0.5 -0.25" solref="0.001 2" solimp="0.99 0.99 0.001" friction="3. 2. 2." rgba="0.27 0.35 0.40 1" />
+      <geom type="box" size="0.0325 0.0355 0.001" pos="0.016 0.254978 0.269" mass="1.0" solref="0.001 2" solimp="0.99 0.99 0.001" friction="3. 2. 2." rgba="0.27 0.35 0.40 1" />
+      <geom type="box" size="0.004 0.004 0.032" pos="0.064 0.286 0.260" rgba="0.27 0.35 0.40 1" />
+      <geom type="box" size="0.004 0.004 0.032" pos="0.064 0.225 0.260" rgba="0.27 0.35 0.40 1" />
+      <body name="link_1_1" pos="-0.455 0.338 0.30321">
+        <inertial pos="0.14969 -0.036011 -0.012955" quat="0.49337 0.495686 0.505092 0.50573" mass="3.0247" diaginertia="0.0129194 0.012204 0.00160241" />
+        <joint name="joint_1_1" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 0.14" damping="30" frictionloss="0.6" />
+        <body name="link_1_1_1" pos="0.213 -0.081 -0.013">
+          <inertial pos="-0.0625 0 0" quat="0.5 0.5 0.5 0.5" mass="0.0042412" diaginertia="5.5266e-06 5.5266e-06 8.4823e-09" />
+          <joint name="joint_1_1_1" pos="0 0 0" axis="1 0 0" type="slide" limited="true" range="0 0.125" damping="2" frictionloss="0.6" />
+          <geom type="cylinder" size="0.002 0.09" pos="-0.09 0 0" quat="0.70710678 0.         0.70710678 0." rgba="0.83 0.32 0.16 1" />
+        </body>
+        <body name="link_1_1_21" pos="0.265 -0.0528 -0.0365">
+          <inertial pos="-7.9814e-09 -0.015444 0.00098912" quat="0.561641 0.429604 -0.429604 0.561641" mass="0.010592" diaginertia="1.10594e-06 1.033e-06 6.39811e-07" />
+          <joint name="joint_1_1_21" pos="0 0 0" axis="0 0 -1" type="slide" limited="true" range="-0.02 0.02" damping="0.6" frictionloss="0.6" />
+          <geom type="box" size="0.008 0.008 0.002" pos="0 -0.03 0.004" rgba="0.83 0.32 0.16 1" />
+        </body>
+        <body name="link_1_1_22" pos="0.265 -0.0528 0.0105">
+          <inertial pos="7.9898e-09 -0.015444 -0.00098912" quat="0.429604 0.561641 -0.561641 0.429604" mass="0.010592" diaginertia="1.10594e-06 1.033e-06 6.39811e-07" />
+          <joint name="joint_1_1_22" pos="0 0 0" axis="0 0 -1" type="slide" limited="true" range="-0.02 0.02" damping="0.6" frictionloss="0.6" />
+          <geom type="box" size="0.008 0.008 0.002" pos="0 -0.03 -0.004" rgba="0.83 0.32 0.16 1" />
+        </body>
+        <geom type="box" pos="0.15 -0.06 0" size="0.115 0.024 0.014" rgba="0.18 0.52 0.64 1" contype="0" conaffinity="0" group="2" />
+      </body>
+      <body name="link_2_11" pos="0.0009 0.181478 0.28416">
+        <inertial pos="0.015 0.015834 -0.029932" quat="0.865658 0.500635 0.000692267 -0.000948006" mass="0.074437" diaginertia="5.745e-05 5.41081e-05 3.86049e-05" />
+        <joint name="joint_2_11" pos="0 0 0" axis="0 -1 0" type="slide" limited="true" range="-0.02 0" damping="0.01" frictionloss="5" />
+        <geom type="box" size="0.026 0.0026 0.034" pos="0.015 0.0099 -0.024" rgba="0.83 0.32 0.16 1" />
+      </body>
+      <body name="link_2_12" pos="0.0009 0.328478 0.28416">
+        <inertial pos="0.015 -0.015834 -0.029932" quat="0.500635 0.865658 -0.000948006 0.000692267" mass="0.074437" diaginertia="5.745e-05 5.41081e-05 3.86049e-05" />
+        <joint name="joint_2_12" pos="0 0 0" axis="0 -1 0" type="slide" limited="true" range="0 0.02" damping="0.01" frictionloss="5" />
+        <geom type="box" size="0.026 0.0026 0.034" pos="0.015 -0.0099 -0.024" rgba="0.83 0.32 0.16 1" />
+      </body>
+      <geom type="box" pos="0.016 0.255 0.12" size="0.037 0.033 0.12" rgba="0.18 0.52 0.64 1" contype="0" conaffinity="0" group="2" />
+      <geom type="box" pos="-0.455 0.338 0.144" size="0.06 0.07 0.144" rgba="0.18 0.52 0.64 1" contype="0" conaffinity="0" group="2" />
+    </body>
+  </worldbody>
+  <actuator>
+    <position name="batt_u_jaw" joint="joint_1_1_22" kp="200" kv="0.1" ctrlrange="-0.02 0.02" forcerange="-20 20" />
+    <position name="batt_l_jaw" joint="joint_1_1_21" kp="200" kv="0.1" ctrlrange="-0.02 0.02" forcerange="-20 20" />
+    <position name="drone_r_jaw" joint="joint_2_11" kp="200" kv="0.1" ctrlrange="-0.02 0.02" forcerange="-20 20" />
+    <position name="drone_l_jaw" joint="joint_2_12" kp="200" kv="0.1" ctrlrange="-0.02 0.02" forcerange="-20 20" />
+    <position name="sliderod" joint="joint_1_1_1" kp="200" kv="0.1" ctrlrange="0 0.1" forcerange="-20 20" />
+    <position name="slideblock" joint="joint_1_1" kp="200" kv="0.1" ctrlrange="0 0.15" forcerange="-20 20" />
+  </actuator>
+</mujoco>
