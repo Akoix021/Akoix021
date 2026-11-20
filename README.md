@@ -1,3 +1,11 @@
+# Hi, I'm Meixuan Wang 👋
+
+I am a Mechatronics student interested in robotics, computer vision and
+automation. Here you can find a selection of my projects.
+
+
+
+
 # Robotics and computer vision projects
 
 This collection covers camera-based charging-port alignment, scripted robot motion in MuJoCo, and a shipwreck imaging study. A separate database course project includes two examples of client-side API integration.
